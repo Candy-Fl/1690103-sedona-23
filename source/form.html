@@ -14,8 +14,8 @@
         <div class="wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item-current"><a href="catalog.html">Фото и видео</a></li>
-            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item site-list__item-current"><a>Форма отзыва</a></li>
             <li class="site-list__item"><a>HTML academy</a></li>
           </ul>
         </div>
@@ -24,102 +24,120 @@
         </button>
       </nav>
     </header>
-
     <main class="page-main">
-        <section class="main-intro">
-            <div class="wrapper">
-                <h1 class="vissually-hidden">Интро Седоны</h1>
-                <img src="img/back-desktop.jpg.jpg" width="1200" height="518" alt="Фотография гор Седоны">
-            </div>
-        </section>
-
-        <section class="photos">
-            <header class="photos__header">
-                <div class="wrapper">
-                    <h1 class="photos__slogan">Фото и видео</h1>
-                    <p class="photos__description">
-                        Не можете решиться на путешествие из-за курса?<br>
-                        Фотографии помогут вам забыть о политике и экономике.
-                </p>
-            </header>
-                <dl class="photos__list">
-                    <div class="photos__item">
-                        <span class="photos__media">
-                            <img src="img/photo-1-desktop.jpg.jpg" width="1200" height="400"  alt="Закат на дороге Седоны">
-                        </span>
-                        <h3 class="photos__item__header">неродные просторы</h3>
-                        <p class="photos__item__autor">Автор фото: Борис</p>
-                        <b class="photos__item__likes">1350</b>
-                    </div>
-
-                    <div class="photos__item">
-                        <span class="photos__media">
-                            <img src="img/photo-2-desktop.jpg.jpg" width="400" height="267"  alt="Кактус на фоне гор">
-                        </span>
-                        <h3 class="photos__item__header">Местная растительность</h3>
-                        <p class="photos__item__autor">Автор фото: Сергей</p>
-                        <b class="photos__item__likes">143</b>
-                    </div>
-
-                    <div class="photos__item">
-                        <span class="photos__media">
-                            <img src="img/photo-3-desktop.jpg.jpg" width="400" height="267"  alt="Серпантин проходящий сквозь лес">
-                        </span>
-                        <h3 class="photos__item__header">Дорога на север</h3>
-                        <p class="photos__item__autor">Автор фото: Петр</p>
-                        <b class="photos__item__likes">96</b>
-                    </div>
-
-                    <div class="photos__item">
-                        <span class="photos__media">
-                            <img src="img/photo-4-desktop.jpg.jpg" width="400" height="267"  alt="Мост через каньон">
-                        </span>
-                        <h3 class="photos__item__header">Мост дьявола</h3>
-                        <p class="photos__item__autor">Автор фото: Антон</p>
-                        <b class="photos__item__likes">254</b>
-                    </div>
-                </dl>
-            </div>
-        </section>
-
-        <section class="video">
-            <div class="wrapper">
-                <header class="video__header">
-                    <h2 class="video__slogan">Все еще сомневаетесь?</h2>
-                    <p class="video__description">
-                        Смотрите видеопрезентацию и скорее за билетами, пока они<br>
-                        не подорожали в очередной раз!
-                    </p>
-                </header>
-                <span class="video__content">
-                    <img src="img/video.jpg" alt="Превью ролика" width="800" height="500">
-                </span>
-            </div>
-        </section>
-    </main>
-
-    <footer class="page-footer">
         <div class="wrapper">
-          <div class="page-footer__tag">
-            <p class="page-footer__tag__text">#visitSEDONA</p>
-          </div>
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href=""></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href=""></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href=""></a>
-              </li>
-            </ul>
-          </div>
-          <div class="made">
-            <a class="made__text" href="">Разработано</a>
-          </div>
+            <section class="form-intro">
+                <h1 class="form-intro__header">Оставьте свой отзыв</h1>
+                <p>
+                Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
+                а также о посещенных вами достопримечательностях
+                </p>
+            </section>
+            <form class="form" method="GET" action="https://echo.htmlacademy.ru">
+              <fieldset class="form__impression">
+                <legend class="form__impression__header"><b>ВАше Общее впечатление:</b></legend>
+                <ul class="form__impression__list">
+                  <li class="form__impression__item">
+                    <input class="form__impression__input" type="radio" id="impression-good" name="impression__radio" value="good">
+                    <label class="form__impression__input__header" for="impression-good">Скорее положительное</label>
+                  </li>
+                  <li class="form__impression__item">
+                    <input class="form__impression__input" type="radio" id="impression-bad" name="impression__radio" value="bad">
+                    <label class="form__impression__input__header" for="impression-bad">Скорее отрицательное</label>
+                  </li>
+                  <li class="form__impression__item">
+                    <input class="form__impression__input" type="radio" id="impression-neutral" mame="impression__radio" value="neutral">
+                    <label class="form__impression__input__header" for="impression-neutral">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__contact">
+                <legend class="form__contact__header"><b>Представьтесь:</b></legend>
+                <ul class="form__contact__list">
+                  <li class="form__contact__item">
+                    <label class="form__contact__input__header" for="contact-name">ИМЯ*:</label>
+                    <input class="form__contact__input" type="text" id="contact-name" name="contact__text">
+                  </li>
+                  <li class="form__contact__item">
+                    <label class="form__contact__input__header" for="contact-surname">ФАМИЛИЯ*:</label>
+                    <input class="form__contact__input" type="text" id="contact-surname" name="contact__text">
+                  </li>
+                  <li class="form__contact__item">
+                    <label class="form__contact__input__header" for="contact-patronymic">Отчество:</label>
+                    <input class="form__contact__input" type="text" id="contact-patronymic" name="contact__text">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__contact-info">
+                <legend class="form__contact-info__header"><b>Контактная информация:</b></legend>
+                <ul class="form__contact-info__list">
+                  <li class="form__contact-info__item">
+                    <label class="form__contact-info__item__header" for="contact-info-tel">Контактный телефон*:</label>
+                    <input class="form__contact-info__input" type="tel" id="contact-info-tel" name="contact-info__tel">
+                  </li>
+                  <li class="form__contact-info__item">
+                    <label class="form__contact-info__header">Электронная почта*:</label>
+                    <input class="form__contact-info__input" type="email" id="contact-info-email" mame="contact-info__email">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__places">
+                <label class="form__places__header">
+                  <b>
+                  посещенные<br>
+                  достопримечательности:
+                  </b>
+                </label>
+                <ul class="form__places__list">
+                  <li class="form__places__item">
+                    <input class="form__places__input" type="checkbox" name="places__checkbox" id="places__devil">
+                    <label class="form__places__input__header" for="places__devil">Мост Дьявола</label>
+                  </li>
+                  <li class="form__places__item">
+                    <input class="form__places__input" type="checkbox" name="places__checkbox" id="places__park">
+                    <label class="form__places__input__header" for="places__park">Слайд-парк</label>
+                  </li>
+                  <li class="form__places__item">
+                    <input class="form__places__input" type="checkbox" name="places__checkbox" id="places__mountain">
+                    <label class="form__places__input__header" for="places__mountain">Гора-Колокол</label>
+                  </li>
+                  <li class="form__places__item">
+                    <input class="form__places__input" type="checkbox" name="places__checkbox" id="places__rocks">
+                    <label class="form__places__input__header" for="places__rocks">Красные скалы</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__emotions">
+                <legend class="form__emotions__header">Опишите свои эмоции:</legend>
+                <input class="form__emotions__input" type="text" id="emotions__text" name="emotions__text" value="Опишите подробно все свои восторги ">
+              </fieldset>
+              <button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+              <p class="form__description">* — обязательные поля</p>
+            </form>
         </div>
-      </footer>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <div class="page-footer__tag">
+          <p class="page-footer__tag__text">#visitSEDONA</p>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href=""></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href=""></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="made">
+          <a class="made__text" href="">Разработано</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
