@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body class="page__body">
     <header class="header">
@@ -12,10 +17,10 @@
       <nav class="main-nav">
         <div class="wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item-current"><a>Главная</a></li>
+            <li class="site-list__item site-list__item-current"><a href="">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a>HTML academy</a></li>
+            <li class="site-list__item"><a href="">HTML academy</a></li>
           </ul>
         </div>
         <button class="main-nav__toggle" type="button">
@@ -46,89 +51,89 @@
       </header>
 
       <dl class="content__list">
-        <div class="content__item">
-          <dt class="content__name">Настоящий городок</dt>
-          <p class="content__number">— №1 —</p>
-          <dd class="content__description">
+        <div class="content__list__item content__list__item-blue">
+          <dt class="content__list__name">Настоящий городок</dt>
+          <p class="content__list__number">— №1 —</p>
+          <dd class="content__list__description">
             Седона не аттракцион для туристов,<br>
             там течет своя жизнь
           </dd>
         </div>
 
-        <div class="content__item">
+        <div class="content__list__item">
           <img src="img/photo-city.jpg" alt="Фотография города Седона" width="800" height="256">
         </div>
-        <div class="content__item">
-          <dt class="content__name">Жилье</dt>
-          <dd class="content__description">
+        <div class="content__list__item">
+          <dt class="content__list__name">Жилье</dt>
+          <dd class="content__list__description content__list__description-gray">
             Рекомендуем пожить в настоящем<br>
             мотеле, все как в кино!
           </dd>
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">Еда</dt>
-          <dd class="content__description">
+        <div class="content__list__item">
+          <dt class="content__list__name">Еда</dt>
+          <dd class="content__list__description content__list__description-gray">
             Всегда заказывайте фирменный бургер,<br>
             вы не разочаруетесь!
           </dd>
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">Сувениры</dt>
-          <dd class="content__description">
+        <div class="content__list__item">
+          <dt class="content__list__name">Сувениры</dt>
+          <dd class="content__list__description content__list__description-gray">
             Не только китайского,<br>
             но и местного производства!
           </dd>
         </div>
 
-        <div class="content__item">
+        <div class="content__list__item">
           <img src="img/photo-bridge.jpg" alt="Фотография моста" width="800" height="256">
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">
+        <div class="content__list__item content__list__item-blue">
+          <dt class="content__list__name">
             Там есть<br>
             мост дьявола
           </dt>
-          <p class="content__number">— №2 —</p>
-          <dd class="content__description">
+          <p class="content__list__number">— №2 —</p>
+          <dd class="content__list__description">
             Да, по нему можно пройти!<br>
             Если вы осмелитесь, конечно
           </dd>
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">
+        <div class="content__list__item content__list__item-gray">
+          <dt class="content__list__name">
             Небольшая<br>
             Площадь
           </dt>
-          <p class="content__number">— №3 —</p>
-          <dd class="content__description">
+          <p class="content__list__number">— №3 —</p>
+          <dd class="content__list__description content__list__description-gray">
             Все интересные места находятся очень<br>
             близко
           </dd>
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">
+        <div class="content__list__item content__list__item-gray">
+          <dt class="content__list__name">
             Красивая<br>
             Дорога
           </dt>
-          <p class="content__number">— №4 —</p>
-          <dd class="content__description">
+          <p class="content__list__number">— №4 —</p>
+          <dd class="content__list__description content__list__description-gray">
             Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно!
           </dd>
         </div>
 
-        <div class="content__item">
-          <dt class="content__name">
+        <div class="content__list__item content__list__item-gray">
+          <dt class="content__list__name">
             Мало<br>
             Туристов
           </dt>
-          <p class="content__number">— №5 —</p>
-          <dd class="content__description">
+          <p class="content__list__number">— №5 —</p>
+          <dd class="content__list__description content__list__description-gray">
             Большинство едет в гранд каньон и<br>
             толпится там
           </dd>
@@ -142,11 +147,12 @@
       <p class="hotel__description">
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="hotel__button button__blue" href="">НАЙТИ гостиницу</a>
     </section>
 
     <section class="map">
       <div class="wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1628108598335!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1628108598335!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
 
@@ -161,13 +167,19 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link socail__link--twitter" href=""></a>
+            <a class="social__link socail__link--twitter" href="">
+              <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M25.3 16.1667c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H19c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link socail__link--facebook" href=""></a>
+            <a class="social__link socail__link--facebook" href="">
+              <svg width="47" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h47v48H0z"/><path d="M25.3 16.4h2.4V13h-2.9c-3.1.2-4.3 2.4-3.9 6.1H19v3.5h2v9.3h3.8v-9.3h2.9v-3.5h-2.9c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link socail__link--vkontakte" href=""></a>
+            <a class="social__link socail__link--youtube" href="">
+              <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M30.1 17H15.8c-1.5 0-2.8 1.3-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.3c1.6 0 2.8-1.3 2.8-2.8v-8.4c.1-1.5-1.2-2.8-2.8-2.8zM20 27.4v-6.8l6.8 3.4-6.8 3.4z" fill="#fff"/></svg>
+            </a>
           </li>
         </ul>
       </div>

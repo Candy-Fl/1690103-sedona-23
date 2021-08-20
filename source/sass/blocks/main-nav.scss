@@ -1,0 +1,17 @@
+.main-nav {
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.site-list {
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item a {
+  color: inherit;
+}
