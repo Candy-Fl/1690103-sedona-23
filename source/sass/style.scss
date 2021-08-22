@@ -1,3 +1,7 @@
+// global
+@import "global/fonts.scss";
+@import "global/normalize";
+@import "global/colors.scss";
 // blocks
 
 @import "blocks/page.scss";
@@ -9,8 +13,3 @@
 @import "blocks/photos.scss";
 @import "blocks/video.scss";
 @import "blocks/form-intro.scss";
-
-// global
-@import "global/fonts.scss";
-@import "global/normalize";
-@import "global/colors.scss";
