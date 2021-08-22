@@ -1,0 +1,18 @@
+.page__body {
+  font-family: "PT Sans", monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button__blue {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  text-decoration: none;
+}

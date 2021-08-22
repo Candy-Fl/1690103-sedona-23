@@ -1,0 +1,56 @@
+.form-intro {
+  text-transform: uppercase;
+}
+
+.form-intro__header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.form-intro__description {
+  line-height: 24px;
+  color: var(--basic-gray);
+  font-size: 14px;
+}
+
+.form__header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form__impression__list,
+.form__contact__list,
+.form__contact-info__list,
+.form__places__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__impression__input__header {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form__contact__input__header {
+  font-size: 14px;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+}
+
+.form__contact-info__item__header {
+  font-size: 14px;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+}
+
+.form__places__input__header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form__description {
+  font-size: 14px;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+}

@@ -1,0 +1,46 @@
+.content {
+  text-transform: uppercase;
+}
+
+
+.content__slogan {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.content__intro {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--basic-gray);
+}
+
+.content__list {
+  margin: 0;
+  padding: 0;
+}
+
+.content__list__item-blue {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.content__list__item-gray {
+  background-color: var(--light-gray);
+}
+
+.content__list__name {
+  font-weight: 700;
+}
+
+.content__list__number {
+  font-size: 14px;
+}
+
+.content__list__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.content__list__description-gray {
+  color: var(--basic-gray);
+}
