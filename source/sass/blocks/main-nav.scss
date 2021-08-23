@@ -15,3 +15,26 @@
 .site-list__item a {
   color: inherit;
 }
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: 702px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

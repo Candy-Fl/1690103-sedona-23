@@ -1,3 +1,5 @@
+// colors
+
 :root {
   --basic-gray: #333333;
   --basic-white: #ffffff;
@@ -5,3 +7,8 @@
   --basic-blue: #81b3d2;
   --light-gray: #eeeeee;
 }
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width: 320px;
