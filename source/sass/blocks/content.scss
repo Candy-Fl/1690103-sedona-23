@@ -1,5 +1,19 @@
 .content {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    .wrapper {
+      width: $tablet-width;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .wrapper {
+      width: $desktop-width;
+      margin: 0 auto;
+    }
+  }
 }
 
 
@@ -17,7 +31,18 @@
 .content__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    grid-template-rows: 256px 330px 256px 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 400px 400px;
+  }
 }
+
 
 .content__list__item-blue {
   background-color: var(--basic-blue);
@@ -26,6 +51,28 @@
 
 .content__list__item-gray {
   background-color: var(--light-gray);
+}
+
+.content__list__item-city {
+  background-image: url("../../img/photo-city.jpg");
+  background-repeat: no-repeat;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+.content__list__item-bridge {
+  background-image: url("../../img/photo-bridge.jpg");
+  height: 256px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .content__list__name {

@@ -1,3 +1,19 @@
+.photos {
+  @media (min-width: $tablet-width) {
+    .wrapper {
+      width: $tablet-width;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .wrapper {
+      width: $desktop-width;
+      margin: 0 auto;
+    }
+  }
+}
+
 .photos__header {
   text-transform: uppercase;
 }
@@ -7,7 +23,11 @@
   font-size: 30px;
 }
 
-.photos__item {
+// .photos__list {
+
+// }
+
+.photos__list__item {
   line-height: 24px;
   font-size: 14px;
 }
@@ -23,4 +43,8 @@
 
 .photos__description {
   color: var(--basic-gray);
+}
+
+.photo__road img {
+  width: 100%;
 }
