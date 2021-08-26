@@ -1,16 +1,39 @@
 .photos {
   @media (min-width: $tablet-width) {
     .wrapper {
-      width: $tablet-width;
       margin: 0 auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     .wrapper {
-      width: $desktop-width;
       margin: 0 auto;
+      max-width: 960px;
     }
+  }
+}
+
+.photos__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.photo__road {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
   }
 }
 
@@ -22,10 +45,6 @@
   font-weight: 700;
   font-size: 30px;
 }
-
-// .photos__list {
-
-// }
 
 .photos__list__item {
   line-height: 24px;

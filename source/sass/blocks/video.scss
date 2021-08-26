@@ -1,5 +1,18 @@
 .video {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    .wrapper {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .wrapper {
+      margin: 0 auto;
+      max-width: 960px;
+    }
+  }
 }
 
 .video__slogan {
