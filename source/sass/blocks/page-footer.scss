@@ -10,9 +10,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 36px;
-  }
-
-  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -38,6 +35,20 @@
   margin-bottom: 45px;
 }
 
+.social__list__item:hover .path1 {
+  fill: var(--hover-blue);
+}
+
+.social__list__item:active {
+  .path1 {
+    fill: var(--active-blue);
+  }
+
+  .path2 {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__item--made {
   position: relative;
   width: 166px;
@@ -53,6 +64,12 @@
   background-size: contain;
   top: 0;
   right: 0;
+  fill: var(--basic-black);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--basic-blue);
+  }
 }
 
 .made__text {

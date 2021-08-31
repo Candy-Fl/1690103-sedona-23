@@ -23,27 +23,8 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
+      <script src="js/script.js"></script>
     </header>
-
-    <script>
-      var mainNav = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      mainNav.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener("click", function(){
-        if (mainNav.classList.contains("main-nav--closed")) {
-          mainNav.classList.remove("main-nav--closed");
-          mainNav.classList.add("main-nav--opened");
-        }
-
-        else {
-          mainNav.classList.remove("main-nav--opened");
-          mainNav.classList.add("main-nav--closed");
-        }
-      }
-      )
-    </script>
 
   <main class="page-main">
       <section class="main-intro">
@@ -182,19 +163,19 @@
         </div>
         <div class="page-footer__item social">
           <ul class="social__list">
-            <li class="social__item">
+            <li class="social__list__item">
               <a class="social__link socail__link--twitter" href="">
-                <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M25.3 16.1667c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H19c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
+                <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h46v48H0z"/><path class="path2" d="M25.3 16.1667c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H19c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__list__item">
               <a class="social__link socail__link--facebook" href="">
-                <svg width="47" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h47v48H0z"/><path d="M25.3 16.4h2.4V13h-2.9c-3.1.2-4.3 2.4-3.9 6.1H19v3.5h2v9.3h3.8v-9.3h2.9v-3.5h-2.9c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
+                <svg width="47" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h47v48H0z"/><path class="path2" d="M25.3 16.4h2.4V13h-2.9c-3.1.2-4.3 2.4-3.9 6.1H19v3.5h2v9.3h3.8v-9.3h2.9v-3.5h-2.9c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__list__item">
               <a class="social__link socail__link--youtube" href="">
-                <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M30.1 17H15.8c-1.5 0-2.8 1.3-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.3c1.6 0 2.8-1.3 2.8-2.8v-8.4c.1-1.5-1.2-2.8-2.8-2.8zM20 27.4v-6.8l6.8 3.4-6.8 3.4z" fill="#fff"/></svg>
+                <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h46v48H0z"/><path class="path2" d="M30.1 17H15.8c-1.5 0-2.8 1.3-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.3c1.6 0 2.8-1.3 2.8-2.8v-8.4c.1-1.5-1.2-2.8-2.8-2.8zM20 27.4v-6.8l6.8 3.4-6.8 3.4z" fill="#fff"/></svg>
               </a>
             </li>
           </ul>
