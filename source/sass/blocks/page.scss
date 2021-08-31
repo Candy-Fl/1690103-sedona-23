@@ -15,4 +15,31 @@ a {
   background-color: var(--basic-blue);
   color: var(--basic-white);
   text-decoration: none;
+  padding: 14.5px 32px;
+  padding-bottom: 17.5px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--hover-blue);
+  }
+
+  &:active {
+    background-color: var(--active-blue);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 121px;
+    padding-right: 121px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }

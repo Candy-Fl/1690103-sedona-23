@@ -1,5 +1,16 @@
 .main-intro__img {
   background-image: url("../../img/back-desktop.jpg.jpg");
-  height: 518px;
+  height: 389px;
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    width: 100%;
+    background-position-y: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/back-mobile.jpg.jpg");
+  }
 }

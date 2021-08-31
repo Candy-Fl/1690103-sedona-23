@@ -1,0 +1,18 @@
+.header__logo {
+  background-image: url("../../img/logotype.svg");
+  width: 102px;
+  height: 84px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav--opened .header__logo {
+    display: none;
+  }
+}
