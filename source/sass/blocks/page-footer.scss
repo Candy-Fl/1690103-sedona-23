@@ -4,16 +4,17 @@
 
 .page-footer__list {
   margin: 0;
-  padding: 0;
+  padding: 29px 77px;
+  padding-bottom: 23px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 663px;
+    padding: 60px 36px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 976px;
     display: flex;
     justify-content: space-between;
   }
@@ -21,12 +22,57 @@
 
 .page-footer__tag__text {
   font-weight: 700;
+  margin-bottom: 34px;
 }
 
 .social__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 166px;
+  margin-bottom: 45px;
+}
+
+.social__list__item:hover .path1 {
+  fill: var(--hover-blue);
+}
+
+.social__list__item:active {
+  .path1 {
+    fill: var(--active-blue);
+  }
+
+  .path2 {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__item--made {
+  position: relative;
+  width: 166px;
+}
+
+.page-footer__item--made::after {
+  content: "";
+  width: 27px;
+  height: 35px;
+  background-image: url("../../img/htmlacademy.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  right: 0;
+  fill: var(--basic-black);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--basic-blue);
+  }
 }
 
 .made__text {
   color: var(--basic-black);
+  font-size: 14px;
 }

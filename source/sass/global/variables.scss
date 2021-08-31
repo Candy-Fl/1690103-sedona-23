@@ -5,10 +5,15 @@
   --basic-white: #ffffff;
   --basic-black: #000000;
   --basic-blue: #81b3d2;
+  --hover-blue: #669ec0;
+  --active-blue: #5496bd;
   --light-gray: #eeeeee;
+  --border-bottom: #678fa8;
+  --border-top: #9ac2db;
+  --current-brown: #766357;
 }
 
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$mobile-width: 320px;
+$mobile-width: 767px;

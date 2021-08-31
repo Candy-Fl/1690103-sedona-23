@@ -1,13 +1,45 @@
 .hotel {
   text-transform: uppercase;
+  padding: 33px 20px;
+  padding-bottom: 49px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    .wrapper {
+      width: 458px;
+      height: 202px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .wrapper {
+      margin: 0 auto;
+      height: 204px;
+    }
+  }
 }
 
+
 .hotel__header {
-  font-size: 30px;
+  font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .hotel__description {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-gray);
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
