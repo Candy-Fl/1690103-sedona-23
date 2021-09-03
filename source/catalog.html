@@ -8,26 +8,28 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo" href="index.html"></a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="wrapper">
+          <a class="header__logo" href="index.html"></a>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item-current"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="">Главная</a></li>
+            <li class="site-list__item site-list__item-current"><a href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item site-list__item--empty"></li>
             <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a href="">HTML academy</a></li>
-          </ul>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+            </ul>
         </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
+      <script src="js/script.js"></script>
     </header>
 
     <main class="page-main">
       <section class="main-intro">
           <h1 class="visually-hidden">Интро Седоны</h1>
-          <div class="main-intro__img"></div>
+          <div class="main-intro__img main-intro__img--catalog"></div>
       </section>
 
         <section class="photos">
@@ -41,39 +43,59 @@
             </header>
                 <dl class="photos__list">
                     <div class="photos__list__item photo__road">
-                        <span class="photos__media">
-                            <img src="img/photo-1-desktop.jpg.jpg" width="1200" height="400"  alt="Закат на дороге Седоны">
-                        </span>
-                        <h3 class="photos__list__item__header">неродные просторы</h3>
-                        <p class="photos__list__item__autor">Автор фото: Борис</p>
-                        <b class="photos__list__item__likes">1350</b>
+                        <div class="photo__lsit__item__media"></div>
+                        <div class="photo__list__item__description">
+                          <div class="photo__list__item__info">
+                            <h3 class="photos__list__item__header">неродные просторы</h3>
+                            <p class="photos__list__item__autor">Автор фото: Борис</p>
+                          </div>
+                          <b class="photos__list__item__likes">
+                            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" opacity=".3" d="M12.9636 3.78l-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9H8.36364V8.4l4.59996-4.62zM2.09091 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.41818.315-.62727.84-.62727 1.47v10.5c0 1.155.94091 2.1 2.09091 2.1h9.40906c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0zM4.18182 8.4H0V21h4.18182V8.4z" fill="#000"/></svg>
+                            <span>1350</span>
+                          </b>
+                        </div>
                     </div>
 
                     <div class="photos__list__item photo__cactus">
-                        <span class="photos__media">
-                            <img src="img/photo-2-desktop.jpg.jpg" width="400" height="267"  alt="Кактус на фоне гор">
-                        </span>
-                        <h3 class="photos__list__item__header">Местная растительность</h3>
-                        <p class="photos__list__item__autor">Автор фото: Сергей</p>
-                        <b class="photos__list__item__likes">143</b>
+                        <div class="photo__lsit__item__media"></div>
+                        <div class="photo__list__item__description">
+                          <div class="photo__list__item__info">
+                            <h3 class="photos__list__item__header">Местная растительность</h3>
+                            <p class="photos__list__item__autor">Автор фото: Сергей</p>
+                          </div>
+                          <b class="photos__list__item__likes">
+                            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" opacity=".3" d="M12.9636 3.78l-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9H8.36364V8.4l4.59996-4.62zM2.09091 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.41818.315-.62727.84-.62727 1.47v10.5c0 1.155.94091 2.1 2.09091 2.1h9.40906c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0zM4.18182 8.4H0V21h4.18182V8.4z" fill="#000"/></svg>
+                            <span>143</span>
+                          </b>
+                        </div>
                     </div>
 
                     <div class="photos__list__item photo__forest">
-                        <span class="photos__media">
-                            <img src="img/photo-3-desktop.jpg.jpg" width="400" height="267"  alt="Серпантин проходящий сквозь лес">
-                        </span>
-                        <h3 class="photos__list__item__header">Дорога на север</h3>
-                        <p class="photos__list__item__autor">Автор фото: Петр</p>
-                        <b class="photos__list__item__likes">96</b>
+                        <div class="photo__lsit__item__media"></div>
+                        <div class="photo__list__item__description">
+                          <div class="photo__list__item__info">
+                            <h3 class="photos__list__item__header">Дорога на север</h3>
+                            <p class="photos__list__item__autor">Автор фото: Петр</p>
+                          </div>
+                          <b class="photos__list__item__likes">
+                            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" opacity=".3" d="M12.9636 3.78l-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9H8.36364V8.4l4.59996-4.62zM2.09091 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.41818.315-.62727.84-.62727 1.47v10.5c0 1.155.94091 2.1 2.09091 2.1h9.40906c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0zM4.18182 8.4H0V21h4.18182V8.4z" fill="#000"/></svg>
+                            <span>96</span>
+                          </b>
+                        </div>
                     </div>
 
                     <div class="photos__list__item photo__canyon">
-                        <span class="photos__media">
-                            <img src="img/photo-4-desktop.jpg.jpg" width="400" height="267"  alt="Мост через каньон">
-                        </span>
-                        <h3 class="photos__list__item__header">Мост дьявола</h3>
-                        <p class="photos__list__item__autor">Автор фото: Антон</p>
-                        <b class="photos__list__item__likes">254</b>
+                        <div class="photo__lsit__item__media"></div>
+                        <div class="photo__list__item__description">
+                          <div class="photo__list__item__info">
+                            <h3 class="photos__list__item__header">Мост дьявола</h3>
+                            <p class="photos__list__item__autor">Автор фото: Антон</p>
+                          </div>
+                          <b class="photos__list__item__likes">
+                            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" opacity=".3" d="M12.9636 3.78l-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9H8.36364V8.4l4.59996-4.62zM2.09091 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.41818.315-.62727.84-.62727 1.47v10.5c0 1.155.94091 2.1 2.09091 2.1h9.40906c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0zM4.18182 8.4H0V21h4.18182V8.4z" fill="#000"/></svg>
+                            <span>254</span>
+                          </b>
+                        </div>
                     </div>
                 </dl>
             </div>
@@ -88,10 +110,10 @@
                         не подорожали в очередной раз!
                     </p>
                 </header>
-                <span class="video__content">
-                    <img src="img/video.jpg" alt="Превью ролика" width="800" height="500">
-                </span>
             </div>
+                <span class="video__content">
+                    <img src="img/video-mobile.jpg.jpg" alt="Превью ролика" width="320" height="201">
+                </span>
         </section>
     </main>
 
@@ -103,25 +125,30 @@
           </div>
           <div class="page-footer__item social">
             <ul class="social__list">
-              <li class="social__item">
+              <li class="social__list__item">
                 <a class="social__link socail__link--twitter" href="">
-                  <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M25.3 16.1667c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H19c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
+                  <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h46v48H0z"/><path class="path2" d="M25.3 16.1667c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H19c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
                 </a>
               </li>
-              <li class="social__item">
+              <li class="social__list__item">
                 <a class="social__link socail__link--facebook" href="">
-                  <svg width="47" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h47v48H0z"/><path d="M25.3 16.4h2.4V13h-2.9c-3.1.2-4.3 2.4-3.9 6.1H19v3.5h2v9.3h3.8v-9.3h2.9v-3.5h-2.9c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
+                  <svg width="47" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h47v48H0z"/><path class="path2" d="M25.3 16.4h2.4V13h-2.9c-3.1.2-4.3 2.4-3.9 6.1H19v3.5h2v9.3h3.8v-9.3h2.9v-3.5h-2.9c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
                 </a>
               </li>
-              <li class="social__item">
+              <li class="social__list__item">
                 <a class="social__link socail__link--youtube" href="">
-                  <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h46v48H0z"/><path d="M30.1 17H15.8c-1.5 0-2.8 1.3-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.3c1.6 0 2.8-1.3 2.8-2.8v-8.4c.1-1.5-1.2-2.8-2.8-2.8zM20 27.4v-6.8l6.8 3.4-6.8 3.4z" fill="#fff"/></svg>
+                  <svg width="46" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" fill="#81B3D2" d="M0 0h46v48H0z"/><path class="path2" d="M30.1 17H15.8c-1.5 0-2.8 1.3-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.3c1.6 0 2.8-1.3 2.8-2.8v-8.4c.1-1.5-1.2-2.8-2.8-2.8zM20 27.4v-6.8l6.8 3.4-6.8 3.4z" fill="#fff"/></svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__item made">
-            <a class="made__text" href="">Разработано</a>
+          <div class="page-footer__item page-footer__item--made">
+            <a class="made__text" href="">
+              Разработано
+              <span class="made__text--picture">
+                <svg width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path1" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/></svg>
+              </span>
+            </a>
           </div>
         </ul>
       </div>

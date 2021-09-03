@@ -35,6 +35,12 @@
   color: var(--basic-gray);
   margin-bottom: 42px;
 
+  @media (max-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
   }

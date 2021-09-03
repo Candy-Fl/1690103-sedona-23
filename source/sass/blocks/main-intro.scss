@@ -1,3 +1,15 @@
+.main-intro--form {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 114px;
+  }
+}
+
 .main-intro__img {
   background-image: url("../../img/back-desktop.jpg.jpg");
   height: 389px;
@@ -12,5 +24,17 @@
 
   @media (max-width: $mobile-width) {
     background-image: url("../../img/back-mobile.jpg.jpg");
+  }
+}
+
+.main-intro__img--catalog,
+.main-intro__img--form {
+  background-image: url("../../img/catalog-back.jpg");
+  height: 158px;
+  background-position-y: -50px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/catalog-desktop.jpg");
+    height: 290px;
   }
 }

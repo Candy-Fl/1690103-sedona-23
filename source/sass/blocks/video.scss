@@ -1,27 +1,61 @@
 .video {
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     .wrapper {
       margin: 0 auto;
+      max-width: 648px;
     }
   }
 
   @media (min-width: $desktop-width) {
     .wrapper {
       margin: 0 auto;
-      max-width: 960px;
+      max-width: 800px;
     }
+  }
+}
+
+.video__header {
+  margin-top: 32px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
+    margin-bottom: 66px;
   }
 }
 
 .video__slogan {
   font-weight: 700;
   font-size: 30px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .video__description {
   line-height: 24px;
   color: var(--basic-gray);
   font-size: 14px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.video__content img {
+  // left: 50%;
+  width: 100%;
 }

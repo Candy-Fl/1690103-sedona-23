@@ -9,20 +9,24 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 36px;
+    padding: 36px 60px;
     display: flex;
     justify-content: space-between;
+    height: 48px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 36px 120px;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .page-footer__tag__text {
+  position: relative;
   font-weight: 700;
   margin-bottom: 34px;
+  bottom: 15%;
 }
 
 .social__list {
@@ -33,6 +37,7 @@
   justify-content: space-between;
   width: 166px;
   margin-bottom: 45px;
+  align-items: center;
 }
 
 .social__list__item:hover .path1 {
@@ -52,27 +57,28 @@
 .page-footer__item--made {
   position: relative;
   width: 166px;
+  top: 20%;
 }
 
-.page-footer__item--made::after {
-  content: "";
+.made__text--picture {
   width: 27px;
   height: 35px;
-  background-image: url("../../img/htmlacademy.svg");
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
   top: 0;
   right: 0;
-  fill: var(--basic-black);
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: var(--basic-blue);
-  }
+.made__text:hover .path1 {
+  fill: var(--basic-blue);
+}
+
+.made__text:active .path1 {
+  opacity: 0.3;
 }
 
 .made__text {
   color: var(--basic-black);
   font-size: 14px;
+  cursor: pointer;
 }
