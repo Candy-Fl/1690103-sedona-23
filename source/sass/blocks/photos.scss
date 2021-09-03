@@ -102,7 +102,7 @@
     border-top: 1px solid var(--border-gray);
 
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-1-mobile.jpg.jpg");
+      background-image: url("../../img/photo-1-mobile.jpg");
       background-repeat: no-repeat;
     }
   }
@@ -111,7 +111,7 @@
     grid-column: 1/3;
 
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-1-desktop.jpg.jpg");
+      background-image: url("../../img/photo-1-desktop.jpg");
       height: 400px;
       background-position: center;
     }
@@ -129,14 +129,14 @@
 .photo__cactus {
   @media (max-width: $mobile-width) {
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-2-mobile.jpg.jpg");
+      background-image: url("../../img/photo-2-mobile.jpg");
       background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $tablet-width) {
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-2-desktop.jpg.jpg");
+      background-image: url("../../img/photo-2-desktop.jpg");
       height: 267px;
     }
   }
@@ -145,14 +145,14 @@
 .photo__forest {
   @media (max-width: $mobile-width) {
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-3-mobile.jpg.jpg");
+      background-image: url("../../img/photo-3-mobile.jpg");
       background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $tablet-width) {
     .photo__lsit__item__media {
-      background-image: url("../../img/photo-3-desktop.jpg.jpg");
+      background-image: url("../../img/photo-3-desktop.jpg");
       height: 267px;
     }
   }
@@ -160,7 +160,7 @@
 
 .photo__canyon {
   .photo__lsit__item__media {
-    background-image: url("../../img/photo-4-desktop.jpg.jpg");
+    background-image: url("../../img/photo-4-desktop.jpg");
     background-repeat: no-repeat;
   }
 

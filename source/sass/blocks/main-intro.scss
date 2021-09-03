@@ -11,7 +11,7 @@
 }
 
 .main-intro__img {
-  background-image: url("../../img/back-desktop.jpg.jpg");
+  background-image: url("../../img/back-desktop.jpg");
   height: 389px;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/back-mobile.jpg.jpg");
+    background-image: url("../../img/back-mobile.jpg");
   }
 }
 
