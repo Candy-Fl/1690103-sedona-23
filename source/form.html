@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="wrapper">
-          <a class="header__logo" href="index.html"></a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седона">
+            </picture>
+          </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="">Главная</a></li>
             <li class="site-list__item site-list__item-current"><a href="catalog.html">Фото и видео</a></li>

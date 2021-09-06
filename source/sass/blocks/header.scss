@@ -1,5 +1,5 @@
 .header__logo {
-  background-image: url("../../img/logotype.svg");
+  // background-image: url("../../img/logotype.svg");
   width: 102px;
   height: 84px;
   position: absolute;
@@ -9,6 +9,15 @@
   right: 0;
   text-align: center;
   z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    left: -85px;
+
+    img {
+      width: 187px;
+      height: 97px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
