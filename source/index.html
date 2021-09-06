@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="wrapper">
-          <a class="header__logo" href="index.html"></a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype.svg" width="102" height="84" alt="Логотип Седона">
+            </picture>
+          </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item-current"><a href="">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
@@ -47,7 +53,7 @@
 
         <dl class="content__list">
           <div class="content__list__item content__list__item-blue">
-            <dt class="content__list__name">Настоящий городок</dt>
+            <dt class="content__list__name">Настоящий<br> городок</dt>
             <p class="content__list__number">— №1 —</p>
             <dd class="content__list__description">
               Седона не аттракцион для туристов,<br>
