@@ -1,17 +1,29 @@
 .header__logo {
-  // background-image: url("../../img/logotype.svg");
   width: 102px;
   height: 84px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  left: -85px;
   right: 0;
   text-align: center;
   z-index: 2;
 
+  .logo-cloud,
+  .logo-blue {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
-    left: -85px;
+    .logo-blue {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .logo-cloud {
+      display: block;
+    }
 
     img {
       width: 187px;
