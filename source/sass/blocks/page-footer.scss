@@ -40,19 +40,66 @@
   align-items: center;
 }
 
-.social__list__item:hover .path1 {
-  fill: var(--hover-blue);
+.background-icon path {
+  fill: var(--basic-blue);
 }
 
-.social__list__item:active {
-  .path1 {
-    fill: var(--active-blue);
+.main-icon path {
+  fill: var(--basic-white);
+}
+
+.social__list__item {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: var(--hover-blue);
   }
 
-  .path2 {
-    opacity: 0.3;
+  &:active {
+    background-color: var(--active-blue);
+
+    .social__link--twitter::before,
+    .socail__link--facebook::before,
+    .socail__link--youtube::before {
+      opacity: 0.3;
+    }
   }
 }
+
+.social__link--twitter::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 13.5px;
+  background-image: url("../../img/twitter.svg");
+  width: 18px;
+  height: 15px;
+}
+
+.socail__link--facebook::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 18.3px;
+  background-image: url("../../img/facebook.svg");
+  width: 8.7px;
+  height: 18.9px;
+}
+
+.socail__link--youtube::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 13px;
+  background-image: url("../../img/youtube.svg");
+  width: 20px;
+  height: 14px;
+}
+
 
 .page-footer__item--made {
   position: relative;
@@ -67,14 +114,15 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  fill: var(--basic-black);
 }
 
-.made__text:hover .path1 {
-  fill: var(--basic-blue);
-}
-
-.made__text:active .path1 {
+.made__text:active .made__text--picture {
   opacity: 0.3;
+}
+
+.made__text:hover .made__text--picture {
+  fill: var(--basic-blue);
 }
 
 .made__text {
