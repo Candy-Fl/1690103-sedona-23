@@ -1,5 +1,6 @@
 .content {
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     .wrapper {
@@ -16,21 +17,33 @@
 }
 
 .content__header {
-  // padding: 32px 17px;
-  padding-bottom: 11px;
+  padding: 0 17px;
+  padding-bottom: 27px;
   text-align: center;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/");
+  }
 }
 
 .content__slogan {
   font-weight: 700;
   font-size: 21px;
   margin-top: 0;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .content__intro {
   font-weight: 400;
   font-size: 14px;
   color: var(--basic-gray);
+  margin: 0;
 }
 
 .content__list {
@@ -51,6 +64,7 @@
 .content__list__item dd {
   margin-inline-start: 0;
 }
+
 
 .content__list__item {
   position: relative;
@@ -91,6 +105,19 @@
 
   @media (min-width: $desktop-width) {
     left: 41%;
+  }
+}
+
+.content__list__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+  }
+}
+
+.content__list__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 2;
   }
 }
 
@@ -141,11 +168,36 @@
 }
 
 .content__list__item-blue {
+  position: relative;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   padding: 39px 16px;
   padding-bottom: 35px;
   text-align: center;
+
+  &:first-child {
+    padding-top: 51px;
+    grid-column: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+  }
+}
+
+.content__white-lines {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    width: 768px;
+    height: 37px;
+    background-image: url("../../img/white-lines.svg");
+    order: 0;
+    top: -21px;
+    left: 0;
+  }
 }
 
 .content__list__item-gray {
@@ -153,6 +205,11 @@
   padding: 26px;
   padding-bottom: 24px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 43px;
+    padding-bottom: 62px;
+  }
 }
 
 .content__list__item-city {
@@ -197,6 +254,7 @@
     background-image: url("../../img/photo-bridge.jpg");
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row: 3;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
@@ -212,11 +270,16 @@
 
 .content__list__name {
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+  }
 }
 
 .content__list__number {
   font-size: 14px;
+  margin-top: 0;
 }
 
 .content__list__description {

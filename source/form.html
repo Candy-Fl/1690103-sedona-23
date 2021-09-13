@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -161,10 +161,10 @@
                       <textarea class="form__emotions__input" id="emotions__text" name="emotions__text" value="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
                     </fieldset>
                   </li>
-                  <li class="form__list__item">
+                  <li class="form__list__item form__empty">
                     <button class="button__blue form__button" type="submit"><span>ОТПРАВИТЬ ОТЗЫВ</span></button>
                   </li>
-                  <li class="form__list__item">
+                  <li class="form__list__item form__empty">
                     <p class="form__description">* — обязательные поля</p>
                   </li>
                 </ul>
@@ -201,6 +201,18 @@
         </ul>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <div class="window--error">
+      <h2 class="window--error__header">
+        ЧТО-ТО ПОШЛО НЕ ТАК!
+      </h2>
+      <p class="window--error__description">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="button__blue button__error">
+        Ок
+      </button>
+    </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

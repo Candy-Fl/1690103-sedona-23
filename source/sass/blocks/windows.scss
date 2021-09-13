@@ -1,0 +1,27 @@
+.window--error {
+  display: none;
+  text-align: center;
+  width: 237px;
+  background-color: var(--basic-white);
+  position: fixed;
+  top: 80px;
+  padding: 40px 41px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.window--error__header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.window--error__description {
+  font-size: 14px;
+}
+
+.button__error {
+  text-transform: uppercase;
+  width: 180px;
+}
