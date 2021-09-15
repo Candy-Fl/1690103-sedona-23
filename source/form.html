@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -82,45 +85,49 @@
                   </li>
                   <li class="form__list__item form__contact-info">
                     <fieldset>
-                      <legend class="form__header form__contact-info__header"><b>Контактная информация:</b></legend>
-                      <ul class="form__contact-info__list">
-                        <li class="form__contact-info__item">
-                          <label class="form__contact-info__item__header" for="contact-info-tel"><span>Контактный</span> телефон*:</label>
-                          <div class="form__contact-info__item--phone">
-                            <input class="form__contact-info__input" type="tel" id="contact-info-tel" name="contact-info__tel" placeholder="Введите телефон">
-                            <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" fill="#010101"/></svg>
-                          </div>
-                        </li>
-                        <li class="form__contact-info__item">
-                          <label class="form__contact-info__item__header">Электронная почта*:</label>
-                          <div class="form__contact-info__item--mail">
-                            <input class="form__contact-info__input" type="email" id="contact-info-email" mame="contact-info__email" placeholder="Введите e-mail">
-                            <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1z" fill="#000"/></svg>
-                          </div>
-                        </li>
-                      </ul>
+                        <legend class="form__header form__contact-info__header"><b> </b>Контактная информация:</b></legend>
+                        <div class="form__contact-info__stick">
+                        <ul class="form__contact-info__list">
+                          <li class="form__contact-info__item">
+                            <label class="form__contact-info__item__header" for="contact-info-tel"><span>Контактный</span> телефон*:</label>
+                            <div class="form__contact-info__item--phone">
+                              <input class="form__contact-info__input" type="tel" id="contact-info-tel" name="contact-info__tel" placeholder="Введите телефон">
+                              <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" fill="#010101"/></svg>
+                            </div>
+                          </li>
+                          <li class="form__contact-info__item">
+                            <label class="form__contact-info__item__header">Электронная почта*:</label>
+                            <div class="form__contact-info__item--mail">
+                              <input class="form__contact-info__input" type="email" id="contact-info-email" mame="contact-info__email" placeholder="Введите e-mail">
+                              <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1z" fill="#000"/></svg>
+                            </div>
+                          </li>
+                        </ul>
+                        </div>
                     </fieldset>
                   </li>
                   <li class="form__list__item form__impression">
                     <fieldset>
-                      <legend class="form__header form__impression__header"><b>ВАше Общее впечатление:</b></legend>
-                      <ul class="form__impression__list">
-                        <li class="form__impression__item">
-                          <input class="form__impression__input visually-hidden" type="radio" id="impression-good" name="impression__radio" value="good" checked>
-                          <span class="impression-radio"></span>
-                          <label class="form__impression__input__header" for="impression-good">Скорее положительное</label>
-                        </li>
-                        <li class="form__impression__item">
-                          <input class="form__impression__input visually-hidden" type="radio" id="impression-bad" name="impression__radio" value="bad">
-                          <span class="impression-radio"></span>
-                          <label class="form__impression__input__header" for="impression-bad">Скорее отрицательное</label>
-                        </li>
-                        <li class="form__impression__item">
-                          <input class="form__impression__input visually-hidden" type="radio" id="impression-neutral" mame="impression__radio" value="neutral">
-                          <span class="impression-radio"></span>
-                          <label class="form__impression__input__header" for="impression-neutral">Затрудняюсь ответить</label>
-                        </li>
-                      </ul>
+                      <div class="form__impression__container">
+                        <legend class="form__header form__impression__header"><b>ВАше Общее впечатление:</b></legend>
+                        <ul class="form__impression__list">
+                          <li class="form__impression__item">
+                            <input class="form__impression__input visually-hidden" type="radio" id="impression-good" name="impression__radio" value="good" checked>
+                            <span class="impression-radio"></span>
+                            <label class="form__impression__input__header" for="impression-good">Скорее положительное</label>
+                          </li>
+                          <li class="form__impression__item">
+                            <input class="form__impression__input visually-hidden" type="radio" id="impression-bad" name="impression__radio" value="bad">
+                            <span class="impression-radio"></span>
+                            <label class="form__impression__input__header" for="impression-bad">Скорее отрицательное</label>
+                          </li>
+                          <li class="form__impression__item">
+                            <input class="form__impression__input visually-hidden" type="radio" id="impression-neutral" mame="impression__radio" value="neutral">
+                            <span class="impression-radio"></span>
+                            <label class="form__impression__input__header" for="impression-neutral">Затрудняюсь ответить</label>
+                          </li>
+                        </ul>
+                      </div>
                     </fieldset>
                   </li>
                   <li class="form__list__item form__places">
@@ -204,7 +211,7 @@
 
     <div class="window--error">
       <h2 class="window--error__header">
-        ЧТО-ТО ПОШЛО НЕ ТАК!
+        ЧТО-ТО ПОШЛО&nbsp;<br>НЕ ТАК!
       </h2>
       <p class="window--error__description">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -212,6 +219,21 @@
       <button class="button__blue button__error">
         Ок
       </button>
+    </div>
+
+    <div class="window--success">
+      <h2 class="window--success__header">
+        Ваш отзыв отправлен!
+      </h2>
+      <P class="window--success__description">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+        В ближайшее время мы опубликуем его на сайте.
+      </P>
+      <div class="window--success__grey">
+        <button class="button__blue button__success">
+          закрыть окно
+        </button>
+      </div>
     </div>
     <script src="js/script.min.js"></script>
   </body>

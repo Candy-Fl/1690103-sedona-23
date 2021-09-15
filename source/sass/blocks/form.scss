@@ -39,9 +39,12 @@
 .form__list {
   margin: 0;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
   list-style: none;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -69,6 +72,7 @@
   border: none;
   min-width: 0;
   padding: 0;
+  position: relative;
 }
 
 .form__impression__list,
@@ -83,6 +87,7 @@
 .form__impression {
   order: -1;
   padding-bottom: 31px;
+  position: relative;
 }
 
 .form__impression__item {
@@ -98,16 +103,27 @@
   }
 }
 
+.form__impression__container::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 292px;
+    width: 1px;
+    background-color: var(--stick-gray);
+  }
+}
+
 .form__impression__header {
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72.5px;
-    text-align: left;
   }
 
-  @media (min-width: $tablet-width) {
-    text-align: center;
+  @media (min-width: $desktop-width) {
+    margin-left: 72px;
   }
 }
 
@@ -139,6 +155,10 @@
     grid-column: 1/span 2;
     padding-bottom: 51px;
   }
+
+  fieldset {
+    position: relative;
+  }
 }
 
 .form__places {
@@ -157,6 +177,7 @@
     grid-template-columns: 1fr 1fr;
     width: 460px;
     margin: 0 auto;
+    text-align: center;
     column-gap: 44px;
   }
 
@@ -171,6 +192,38 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58.5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
   }
 }
 
@@ -202,6 +255,43 @@
     padding-top: 0;
   }
 }
+
+.form__emotions__header {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+  }
+}
+
 
 .form__emotions__input {
   width: 258px;
@@ -271,10 +361,9 @@
 .form__contact-info__list {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
-}
 
-.form__contact-info__header {
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
   }
@@ -284,10 +373,47 @@
   }
 }
 
+.form__contact-info__header {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: var(--stick-gray);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+  }
+}
 
 .form__contact-info__item {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -310,7 +436,7 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
-    margin-right: 18px;
+    margin-right: 13px;
   }
 }
 
@@ -319,26 +445,27 @@
   position: relative;
 
   svg {
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 0;
     right: -3px;
     background-color: var(--input-gray);
-    padding: 20px 19px;
+    padding: 19px 19px;
   }
 }
 
 .form__contact-info__input {
   border: 0;
-  width: 100%;
   height: 58px;
+  width: calc(100% - 22px);
+  padding: 0;
   background-color: var(--background-photo);
-  padding-left: 22px;
   color: var(--basic-black);
+  padding-left: 22px;
 
   @media (min-width: $desktop-width) {
-    width: 311px;
+    width: 294px;
   }
 }
 
