@@ -50,6 +50,7 @@
 .photos__description {
   color: var(--basic-gray);
   font-size: 14px;
+  display: inline;
 
   @media (max-width: $mobile-width) {
     br {

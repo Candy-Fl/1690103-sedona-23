@@ -57,9 +57,9 @@
             <header class="photos__header">
                     <h1 class="photos__slogan">Фото и видео</h1>
                     <p class="photos__description">
-                        Не можете решиться на путешествие из-за курса?<br>
+                        Не можете решиться на путешествие из-за курса?&nbsp;<br>
                         Фотографии помогут вам забыть о политике и экономике.
-                </p>
+                    </p>
             </header>
                 <ul class="photos__list">
                     <div class="photos__list__item photo__road">
@@ -168,7 +168,14 @@
                 </header>
             </div>
                 <span class="video__content">
-                    <img src="img/video-mobile.jpg" alt="Превью ролика" width="320" height="201">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                    <img src="img/video-mobile.jpg" alt="Превью ролика" width="320" height="201" srcset="img/video-mobile@2x.jpg 2x" alt="Превью видео">
+                  </picture>
                 </span>
         </section>
     </main>
