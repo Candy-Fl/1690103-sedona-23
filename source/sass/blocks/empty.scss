@@ -1,0 +1,20 @@
+.empty {
+  border: none;
+  padding: 0;
+}
+
+.empty__send {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding-top: 18.5px;
+    padding-bottom: 13.5px;
+    padding-left: 49px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}

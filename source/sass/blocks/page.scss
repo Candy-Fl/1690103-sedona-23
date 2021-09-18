@@ -1,51 +1,8 @@
 .page__body {
-  font-family: "PT Sans", monospace, sans-serif;
+  font-family: "PT Sans", "arial", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-white);
-}
-
-a {
-  text-decoration: none;
-}
-
-.button__blue {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-  text-decoration: none;
-  padding: 14.5px 32px;
-  padding-bottom: 17.5px;
-  font-weight: 700;
-  border: none;
-  mix-blend-mode: normal;
-
-  &:hover {
-    background-color: var(--hover-blue);
-  }
-
-  &:active {
-    background-color: var(--active-blue);
-
-    span {
-      opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 121px;
-    padding-right: 121px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }

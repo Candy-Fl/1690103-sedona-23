@@ -1,0 +1,30 @@
+.made {
+  position: relative;
+  width: 144px;
+  top: 20%;
+  text-align: left;
+}
+
+.made__picture {
+  width: 27px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+  fill: var(--basic-black);
+}
+
+.made__text:active .made__picture {
+  opacity: 0.3;
+}
+
+.made__text:hover .made__picture {
+  fill: var(--basic-blue);
+}
+
+.made__text {
+  color: var(--basic-black);
+  font-size: 14px;
+  cursor: pointer;
+}

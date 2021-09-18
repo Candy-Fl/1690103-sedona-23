@@ -1,0 +1,39 @@
+.contact {
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+}
+
+.contact__header {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact__item {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.contact__label {
+  font-size: 14px;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+  margin-right: 14px;
+  padding-top: 20px;
+}
+
+.contact__input {
+  border: 0;
+  background-color: var(--background-photo);
+  height: 58px;
+  width: 100%;
+  padding-left: 22px;
+  color: var(--basic-black);
+}

@@ -1,4 +1,4 @@
-.window--error {
+.window-error {
   display: none;
   text-align: center;
   width: 237px;
@@ -29,7 +29,7 @@
   }
 }
 
-.window--success {
+.window-success {
   display: none;
   text-align: center;
   width: 320px;
@@ -58,8 +58,8 @@
 }
 
 
-.window--error__header,
-.window--success__header {
+.window-error__header,
+.window-success__header {
   font-size: 18px;
   font-weight: bold;
   margin-top: 0;
@@ -70,7 +70,7 @@
   }
 }
 
-.window--success__header {
+.window-success__header {
   margin-top: 30px;
   margin-bottom: 38px;
 
@@ -79,8 +79,8 @@
   }
 }
 
-.window--error__description,
-.window--success__description {
+.window-error__description,
+.window-success__description {
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
@@ -88,7 +88,7 @@
   }
 }
 
-.window--success__description {
+.window-success__description {
   padding: 0 38px;
   margin-bottom: 27px;
 
@@ -98,7 +98,7 @@
   }
 }
 
-.window--success__grey {
+.window-success__grey {
   background-color: var(--background-photo);
   width: 320px;
   height: 98px;
@@ -109,7 +109,7 @@
   }
 }
 
-.button__error {
+.window-error__button {
   text-transform: uppercase;
   width: 180px;
   text-align: center;
@@ -119,7 +119,7 @@
   }
 }
 
-.button__success {
+.window-success__button {
   margin-top: 21px;
   text-transform: uppercase;
   width: 280px;
