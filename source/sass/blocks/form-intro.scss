@@ -2,12 +2,18 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 16px;
+  padding-top: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    padding-top: 70px;
   }
 
-  .wrapper {
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+  }
+
+  .form-intro__wrapper {
     padding: 0 20px;
   }
 }

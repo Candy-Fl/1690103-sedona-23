@@ -3,6 +3,7 @@
 }
 
 .page-footer__list {
+  list-style: none;
   margin: 0;
   padding: 29px 77px;
   padding-bottom: 23px;
@@ -18,13 +19,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 120px;
-    display: flex;
-    justify-content: space-between;
+    width: 976px;
+    margin: 0 auto;
   }
 }
 
-.page-footer__tag__text {
+.page-footer__text {
   position: relative;
   font-weight: 700;
   margin-bottom: 34px;
@@ -32,105 +32,3 @@
   text-align: left;
 }
 
-.social__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 151px;
-  margin-bottom: 45px;
-  align-items: center;
-}
-
-.background-icon path {
-  fill: var(--basic-blue);
-}
-
-.main-icon path {
-  fill: var(--basic-white);
-}
-
-.social__list__item {
-  width: 46px;
-  height: 48px;
-  background-color: var(--basic-blue);
-  cursor: pointer;
-  position: relative;
-
-  &:hover {
-    background-color: var(--hover-blue);
-  }
-
-  &:active {
-    background-color: var(--active-blue);
-
-    .social__link--twitter::before,
-    .socail__link--facebook::before,
-    .socail__link--youtube::before {
-      opacity: 0.3;
-    }
-  }
-}
-
-.social__link--twitter::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 13.5px;
-  background-image: url("../../img/twitter.svg");
-  width: 18px;
-  height: 15px;
-}
-
-.socail__link--facebook::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: 18.3px;
-  background-image: url("../../img/facebook.svg");
-  width: 8.7px;
-  height: 18.9px;
-}
-
-.socail__link--youtube::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 13px;
-  background-image: url("../../img/youtube.svg");
-  width: 20px;
-  height: 14px;
-}
-
-
-.page-footer__item--made {
-  position: relative;
-  width: 144px;
-  top: 20%;
-  text-align: left;
-}
-
-.made__text--picture {
-  width: 27px;
-  height: 35px;
-  position: absolute;
-  top: 0;
-  right: 15px;
-  cursor: pointer;
-  fill: var(--basic-black);
-}
-
-.made__text:active .made__text--picture {
-  opacity: 0.3;
-}
-
-.made__text:hover .made__text--picture {
-  fill: var(--basic-blue);
-}
-
-.made__text {
-  color: var(--basic-black);
-  font-size: 14px;
-  cursor: pointer;
-}
