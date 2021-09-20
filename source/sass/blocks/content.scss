@@ -23,7 +23,7 @@
 
 .content__header {
   padding: 0 17px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
   text-align: center;
   position: relative;
 
@@ -94,23 +94,11 @@
     padding-top: 158px;
     text-align: center;
   }
-
-  @media (max-width: $mobile-width) {
-    br {
-      display: none;
-    }
-  }
-
-  @media (max-width: $desktop-width) {
-    br {
-      display: block;
-    }
-  }
 }
 
 .content__item--house {
-  @media (max-width) {
-    padding-top: 35px;
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
   }
 }
 
@@ -185,9 +173,15 @@
 }
 
 .content__item--burger {
-  @media (max-width) {
-    padding-top: 31px;
-    margin-bottom: 43px;
+  @media (max-width: $mobile-width) {
+    padding-top: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+.content__item--burger .content__description {
+  br {
+    display: block;
   }
 }
 
@@ -245,7 +239,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 45px;
     grid-column: 3;
+  }
+}
+
+.content__item--blue .content__description {
+  @media (min-width: $tablet-width) {
+
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 
@@ -293,7 +296,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -363,10 +366,18 @@
 
 .content__name {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
   }
 }
 
@@ -380,12 +391,12 @@
   font-size: 14px;
   line-height: 21px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 19px;
+  br {
+    display: none;
+  }
 
-    br {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -397,6 +408,18 @@
 
 .content__description--gray {
   color: var(--basic-gray);
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .content__item-href {

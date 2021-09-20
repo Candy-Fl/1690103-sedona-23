@@ -7,18 +7,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    .photos__media {
+    img {
+      width: 324px;
       height: 267px;
-
-      img {
-        width: 324px;
-        height: 267px;
-      }
     }
   }
 
+
   @media (min-width: $desktop-width) {
-    .photos__media img {
+    img {
       width: 400px;
     }
   }

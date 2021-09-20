@@ -6,18 +6,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
-
-    .photos__media {
-      height: 400px;
-      background-position: center;
-    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
-
-    .photos__description {
-      width: 1159px;
-    }
   }
 }

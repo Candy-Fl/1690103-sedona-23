@@ -1,5 +1,5 @@
 .photos {
-  padding-top: 32px;
+  padding-top: 25px;
 
   @media (max-width: $mobile-width) {
     .photos__wrapper {
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
+    padding-top: 100px;
 
     .photos__wrapper {
       margin: 0 auto;
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 80px;
   }
 }
 
@@ -102,6 +102,39 @@
   }
 }
 
+.photos__media--road {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-position: center;
+  }
+}
+
+.photos__media--cactus {
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.photos__media--forest {
+  @media (max-width: $mobile-width) {
+    height: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.photos__media--canyon {
+  @media (max-width: $mobile-width) {
+    height: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
 .photos__description {
   @media (min-width: $tablet-width) {
     background-color: var(--background-photo);
@@ -123,6 +156,16 @@
       fill: var(--basic-white);
     }
   }
+}
+
+.photos__description--road {
+  @media (min-width: $desktop-width) {
+    width: 1159px;
+  }
+}
+
+.photos__description--road .photos__likes {
+  margin-right: 0;
 }
 
 .photos__header {
@@ -149,9 +192,9 @@
 .photos__likes {
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+    margin-right: 10px;
   }
 }
-
 
 .photos__likes svg {
   position: static;
@@ -160,4 +203,8 @@
 
 .photos__likes span {
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 7px;
+  }
 }

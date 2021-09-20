@@ -38,12 +38,18 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/catalog-desktop.jpg");
-    height: 290px;
-    background-position-y: -229px;
+    height: 300px;
+    background-position-y: -220px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog-desktop@2x.png");
       background-size: 1200px auto;
     }
+  }
+}
+
+.main-intro__img--form {
+  @media (min-width: $tablet-width) {
+    background-position-y: -230px;
   }
 }
