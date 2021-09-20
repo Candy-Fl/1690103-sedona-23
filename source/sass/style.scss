@@ -6,7 +6,7 @@
 // blocks
 
 @import "blocks/page.scss";
-@import "blocks/button.scss";
+@import "blocks/button-blue.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/content.scss";
@@ -31,4 +31,5 @@
 @import "blocks/intro.scss";
 @import "blocks/main-intro.scss";
 @import "blocks/map";
-@import "blocks/windows.scss";
+@import "blocks/window-error.scss";
+@import "blocks/window-success.scss";

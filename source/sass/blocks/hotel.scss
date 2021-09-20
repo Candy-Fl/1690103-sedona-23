@@ -5,6 +5,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 57px;
+
     .hotel__wrapper {
       width: 458px;
       height: 202px;
@@ -23,9 +25,11 @@
 
 .hotel__header {
   font-size: 21px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -33,7 +37,7 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-gray);
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 
   @media (max-width: $mobile-width) {
     br {
@@ -47,5 +51,11 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
+  }
+}
+
+.hotel__find {
+  @media (max-width: $mobile-width) {
+    padding: 14px 47px 18px;
   }
 }

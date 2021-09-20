@@ -3,6 +3,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
     .video__wrapper {
       margin: 0 auto;
       width: 648px;
@@ -10,6 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+
     .video__wrapper {
       width: 800px;
     }
@@ -22,12 +26,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
-    margin-bottom: 62px;
+    margin-bottom: 92px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 63px;
-    margin-bottom: 66px;
+    margin-bottom: 96px;
   }
 }
 
@@ -38,11 +42,15 @@
   @media (max-width: $mobile-width) {
     font-size: 18px;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 41px;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
   }
 }
 

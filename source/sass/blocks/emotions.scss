@@ -1,5 +1,5 @@
 .emotions {
-  padding-top: 20px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/span 2;
@@ -9,6 +9,9 @@
 
 .emotions__header {
   @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-top: 0;
+
     &::after {
       content: "";
       position: absolute;
@@ -48,17 +51,20 @@
   width: 258px;
   height: 142px;
   font-size: 18px;
+  line-height: 26px;
   background-color: var(--background-photo);
   margin: 0;
   padding: 0;
-  padding-left: 21px;
-  padding-top: 18px;
+  padding-left: 18px;
+  padding-top: 10px;
   border: none;
   font-weight: 700;
   margin-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     width: 627px;
+    margin-top: 30px;
+    padding-top: 20px;
     margin-bottom: 58px;
   }
 

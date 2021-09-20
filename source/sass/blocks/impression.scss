@@ -1,6 +1,6 @@
 .impression {
   order: -1;
-  padding-bottom: 31px;
+  padding-bottom: 39px;
   position: relative;
 }
 
@@ -18,7 +18,6 @@
 
 .impression__header {
   margin: 0;
-  margin-bottom: 37px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
@@ -35,6 +34,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
 }
 
 .impression__item {
@@ -60,8 +64,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  top: -10px;
-  left: 0;
+  top: -15px;
+  left: -2px;
   background-image: url("../../img/radio-off.svg");
   background-repeat: no-repeat;
 }
@@ -69,5 +73,5 @@
 .impression__label {
   font-weight: 700;
   font-size: 18px;
-  padding-left: 78px;
+  padding-left: 73px;
 }

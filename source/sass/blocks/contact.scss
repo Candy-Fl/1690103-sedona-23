@@ -14,6 +14,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }
 
 .contact__item {
@@ -36,4 +40,6 @@
   width: 100%;
   padding-left: 22px;
   color: var(--basic-black);
+  font-size: 18px;
+  font-weight: 700;
 }
